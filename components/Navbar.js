@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [darkTheme, setDarkTheme] = useState(undefined);
+  const [darkTheme, setDarkTheme] = useState(null);
 
   const handleToggle = (event) => {
     setDarkTheme(event.target.checked);
