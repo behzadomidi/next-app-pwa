@@ -1,10 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
 
-html,
+/* declaring the css variables colors */
+:root {
+  --color-primary-accent: #2614c7;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-anchor: #000aff;
+}
+
+[data-theme="dark"] {
+  --color-primary-accent: #00ff4c;
+  --color-primary: #fff;
+  --color-button: #00ff4c;
+  --color-paragraph: #8a8a8a;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #1f1e26;
+  --color-anchor: #00ff4c;
+  --color-box: #202020;
+}
+
 body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -90,7 +121,6 @@ header {
   margin: auto;
   padding: 15px 20px;
   width: 60%;
-  /* height: 500px; */
   height: auto;
   padding-bottom: 100px;
   background-color: #fff;
@@ -154,42 +184,6 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(26px);
-}
-
-/* declaring the css variables colors */
-:root {
-  --color-primary-accent: #2614c7;
-  --color-primary: #000;
-  --color-button: #3d486c;
-  --color-paragraph: #797979;
-  --color-button-text: rgb(255, 255, 255);
-  --color-background: #fff;
-  --color-anchor: #000aff;
-}
-
-[data-theme="dark"] {
-  --color-primary-accent: #00ff4c;
-  --color-primary: #fff;
-  --color-button: #00ff4c;
-  --color-paragraph: #8a8a8a;
-  --color-button-text: rgb(0, 0, 0);
-  --color-background: #1f1e26;
-  --color-anchor: #00ff4c;
-  --color-box: #202020;
-}
-
-body {
-  background-color: var(--color-background);
-  color: var(--color-primary);
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-
-h1,
-h3,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 .switch {
